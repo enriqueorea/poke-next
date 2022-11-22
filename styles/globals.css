@@ -1,26 +1,58 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-a {
-  color: inherit;
-  text-decoration: none;
+.bgPoke-normal {
+  background-color: #a8a77a;
 }
-
-* {
-  box-sizing: border-box;
+.bgPoke-fire {
+  background-color: #ee8130;
 }
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.bgPoke-water {
+  background-color: #6390f0;
+}
+.bgPoke-electric {
+  background-color: #f7d02c;
+}
+.bgPoke-grass {
+  background-color: #7ac74c;
+}
+.bgPoke-ice {
+  background-color: #96d9d6;
+}
+.bgPoke-fighting {
+  background-color: #c22e28;
+}
+.bgPoke-poison {
+  background-color: #a33ea1;
+}
+.bgPoke-ground {
+  background-color: #e2bf65;
+}
+.bgPoke-flying {
+  background-color: #a98ff3;
+}
+.bgPoke-psychic {
+  background-color: #f95587;
+}
+.bgPoke-bug {
+  background-color: #a6b91a;
+}
+.bgPoke-rock {
+  background-color: #b6a136;
+}
+.bgPoke-ghost {
+  background-color: #735797;
+}
+.bgPoke-dragon {
+  background-color: #6f35fc;
+}
+.bgPoke-dark {
+  background-color: #705746;
+}
+.bgPoke-steel {
+  background-color: #b7b7ce;
+}
+.bgPoke-fairy {
+  background-color: #d685ad;
 }
