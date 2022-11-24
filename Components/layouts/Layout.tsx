@@ -5,9 +5,10 @@ import { Navbar } from "../ui";
 type Props = {
   children: React.ReactNode;
   title?: string;
+  padding?: boolean;
 };
 
-const Layout: FC<Props> = ({ children, title }) => {
+const Layout: FC<Props> = ({ children, title, padding }) => {
   return (
     <>
       <Head>
@@ -18,7 +19,7 @@ const Layout: FC<Props> = ({ children, title }) => {
         <meta name="keywords" content="Next.js, TypeScript, Pokemon" />
       </Head>
       <Navbar />
-      <main className="px-[3%]">{children}</main>
+      <main className={padding ? "px-[3%]" : ""}>{children}</main>
     </>
   );
 };

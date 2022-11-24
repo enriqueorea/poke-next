@@ -1,5 +1,6 @@
 import { Spacer, Text, useTheme } from "@nextui-org/react";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 type Props = {};
@@ -21,16 +22,20 @@ const Navbar = (props: Props) => {
         />
       </div>
 
-      <Text
-        h1
-        size={35}
-        weight="bold"
-        css={{ textGradient: "45deg, $purple600 -20%, $pink600 100%" }}
-      >
-        Pokemon
-      </Text>
+      <Link href={"/"}>
+        <Text
+          h1
+          size={35}
+          weight="bold"
+          css={{ textGradient: "45deg, $purple600 -20%, $pink600 100%" }}
+        >
+          Pokemon
+        </Text>
+      </Link>
       <Spacer css={{ flex: 1 }} />
-      <Text>Favoritos</Text>
+      <Link href={"/favoritos"}>
+        <Text>Favoritos</Text>
+      </Link>
     </div>
   );
 };
