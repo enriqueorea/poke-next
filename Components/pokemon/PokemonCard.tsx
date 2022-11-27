@@ -11,7 +11,7 @@ type Props = {
 const PokemonCard: FC<Props> = ({ id, name, image }) => {
   const router = useRouter();
   const handleClick = () => {
-    router.push(`/pokemon/${id}`);
+    router.push(`/name/${name}`);
   };
   return (
     <Card onClick={handleClick} isHoverable isPressable>
